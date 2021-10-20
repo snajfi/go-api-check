@@ -1,7 +1,7 @@
 package main
 
 import (
-	helpprinter "go-api-check/cmd/help-printer"
+	inputprocessor "go-api-check/cmd/input-processor"
 	"os"
 )
 
@@ -9,6 +9,6 @@ func main() {
 
 	args := os.Args[1:]
 
-	helpprinter.CheckHelpInvocation(args)
+	inputprocessor.ProcessInputArguments(args)
 
 }
