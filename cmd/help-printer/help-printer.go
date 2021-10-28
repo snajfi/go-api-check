@@ -1,10 +1,14 @@
 package helpprinter
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func CheckHelpInvocation(args []string) {
-	if len(args) == 1 && args[0] == "-help" {
+	if args[0] == "-help" {
 		printHelp()
+		os.Exit(0)
 	}
 }
 

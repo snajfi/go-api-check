@@ -1,3 +1,7 @@
 package caller
 
-func Call(args []string)
+import "fmt"
+
+func Call(args []string) {
+	fmt.Println("Caller invocatio!")
+}
